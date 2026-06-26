@@ -60,7 +60,7 @@ module.exports = {
                         threadInfo.users[senderID].count++;
                         const timePassed = Date.now() - threadInfo.users[senderID].time;
                         const messages = threadInfo.users[senderID].count;
-                        const timeLimit = 80000; // 80 seconds
+                        const timeLimit = 80000;
                         const messageLimit = 14;
 
                         if (messages > messageLimit && timePassed < timeLimit) {
